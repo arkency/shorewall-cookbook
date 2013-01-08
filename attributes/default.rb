@@ -16,6 +16,7 @@ default[:shorewall] = {
     { :source => "net", :dest => "fw", :proto => "tcp", :dest_port => 22, :action => "ACCEPT" }
   ],
   :masq => [],
+  :params => {},
   :enabled => true,
   :clamp_mss => false,
   :ip_forwarding => "Keep"

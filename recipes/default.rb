@@ -18,7 +18,7 @@ template "/etc/shorewall/shorewall.conf" do
   notifies :restart, 'service[shorewall]'
 end
 
-%w(zones interfaces policy rules masq).each do |configuration_file|
+%w(zones interfaces policy rules masq params).each do |configuration_file|
   unless node[:shorewall][configuration_file].empty?
     template "/etc/shorewall/#{configuration_file}" do
       source configuration_file
