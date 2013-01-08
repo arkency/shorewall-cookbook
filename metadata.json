@@ -1,0 +1,31 @@
+{
+  "name": "shorewall",
+  "description": "Installs and configures Shorewall",
+  "long_description": "## DESCRIPTION\n\nManages the Shorewall configuration for a node.\n",
+  "maintainer": "Arkency",
+  "maintainer_email": "dev@arkency.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "debian": ">= 0.0.0"
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "shorewall": "Installs and configures Shorewall"
+  },
+  "version": "0.0.2"
+}
