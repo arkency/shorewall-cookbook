@@ -11,7 +11,7 @@
 #
 ###############################################################################
 #ZONE	HOST(S)					OPTIONS
-<% node[:shorewall][:tunnels].each do |line| -%>
+<% node[:shorewall][:hosts].each do |line| -%>
 <%= Shorewall::Utils.format_line(line, [[:zone, 8], [:host, 40], [:options, 0]]) %>
 <% end -%>
 #LAST LINE -- ADD YOUR ENTRIES BEFORE THIS LINE -- DO NOT REMOVE
