@@ -10,8 +10,8 @@
 # http://www.shorewall.net/manpages/shorewall-tunnels.html
 #
 ###############################################################################
-#TYPE			ZONE	GATEWAY		GATEWAY
-#						ZONE
+#TYPE                   ZONE    GATEWAY         GATEWAY
+#                                               ZONE
 <% node[:shorewall][:tunnels].each do |line| -%>
 <%= Shorewall::Utils.format_line(line, [[:type, 24], [:zone, 8], [:gateway, 16], [:gateway_zone, 0]]) %>
 <% end -%>
