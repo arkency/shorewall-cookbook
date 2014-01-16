@@ -27,5 +27,5 @@
   "recipes": {
     "shorewall": "Installs and configures Shorewall"
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }

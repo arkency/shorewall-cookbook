@@ -19,7 +19,7 @@ template "/etc/shorewall/shorewall.conf" do
 end
 
 %w(zones interfaces policy rules masq params hosts tunnels).each do |configuration_file|
-  unless node[:shorewall][configuration_file].empty?
+  if node[:shorewall][configuration_file] && !node[:shorewall][configuration_file].empty?
     template "/etc/shorewall/#{configuration_file}" do
       source configuration_file
       owner "root"
