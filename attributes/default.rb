@@ -8,8 +8,8 @@ default[:shorewall] = {
   ],
   :policy => [
     { :source => "fw",  :dest => "net", :policy => "ACCEPT" },
-    { :source => "net", :dest => "all", :policy => "DROP",   :log => "info" },
-    { :source => "all", :dest => "all", :policy => "REJECT", :log => "info" }
+    { :source => "net", :dest => "all", :policy => "DROP",   :log_level => "info" },
+    { :source => "all", :dest => "all", :policy => "REJECT", :log_level => "info" }
   ],
   :rules => [
     { :source => "net", :dest => "fw", :proto => "icmp", :action => "ACCEPT" },
