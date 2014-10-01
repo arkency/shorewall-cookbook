@@ -13,6 +13,6 @@
 #SOURCE         DEST            POLICY          LOG             LIMIT:BURST
 #                                               LEVEL
 <% node[:shorewall][:policy].each do |line| -%>
-<%= Shorewall::Utils.format_line(line, [[:source, 16], [:dest, 16], [:policy, 16], [:log_level, 16], [:limit, 0]]) %>
+<%= Shorewall::Utils.format_line(line, [[:source, 16], [:dest, 16], [:policy, 16], [:log, 16], [:limit, 0]]) %>
 <% end -%>
 #LAST LINE -- DO NOT REMOVE
